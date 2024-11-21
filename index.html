@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom style sheet  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- /////// ATM MACHINE //////  -->
+    <h1 id="main-heading">Welcome to the NAQVI bank </h1>
+    <!-- //// page 1  //// -->
+    <div id="page1">
+        <img src="./assets/atm_font_image-removebg-preview.png" id="atm" alt="">
+        <div id="user-pincode">
+            <h2>Enter 5 digit Pin Code</h2>
+            <input type="number" id="pin-input">
+            <button id="submit" onclick="submitPin()">Submit</button>
+        </div>
+    </div>
+    <!-- ///// page 2 ////  -->
+    <div id="container">
+    <div id="page2">
+        <button id="back" onclick="backBtn()"> <i class="fa-sharp fa-solid fa-arrow-left"></i></button>
+        <img src="./assets/images-removebg-preview.png" id="atm-machine" alt="">
+        <h2 id="page2-heading"> Please Select a transaction</h2>
+        <button id="balance" onclick="userBalance()"> <i class="fa-solid fa-scroll"></i> Balance Inquiry</button>
+        <button id="withdrawl" onclick="userWithDrawl()"> <i class="fa-solid fa-money-bill px-3"></i> Cash
+            Withdrawl</button>
+        <div id="withdrawal-input"></div>
+        <button id="deposit" onclick="userDeposit()"> <i class="fa-solid fa-money-bill-transfer px-3"></i>
+            Deposit</button>
+    </div>
+    </div>
+    <!-- /////// page 3 /////  -->
+    <!-- <div class="container">
+
+</div> -->
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

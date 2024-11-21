@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #AEDCF6;
+}
+
+ #main-heading{
+padding-top: 40px;
+padding-bottom: 20px;
+color: #173E7F;
+font-weight:bolder;
+letter-spacing: 2px;
+}
+/* //// main page img /////  */
+#atm {
+    width: 500px;
+    height: 500px;
+    /* margin: 10px 0; */
+    text-align: center;
+}
+/* //// input field and button ////  */
+#user-pincode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+ #submit , #balance ,#withdrawl ,#deposit {
+    width: 250px;
+height: 50px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+button:hover{
+    background-color: #173E7F;
+    color: white;
+}
+#pin-input{
+height: 30px;
+width: 250px;
+}
+/* /////////////  */
+/* #page1{
+display: none;
+} */
+/* /////////// */
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75vh;
+    width: 60vw;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid  #173E7F ;
+    border-radius: 15px;
+    background-color: #173E7F;
+}
+#atm-machine{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-top: -50px;
+}
+h2{
+    color:white;
+    margin-bottom: 10px;
+}
+#back{
+    color:#173E7F;
+    background-color: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+/* #page2{
+    display: none;
+} */
+
+ /* #container {
+    display: none;
+} */
+#depositInput, #withdrawalInput{
+    height: 40px;
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:345px){
+    #user-pincode{
+align-items: end;
+    }
+}
